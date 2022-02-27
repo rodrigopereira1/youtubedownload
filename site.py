@@ -17,8 +17,6 @@ def homepage():
         buffer = BytesIO()
         video.streams.get_audio_only().stream_to_buffer(buffer)
         buffer.seek(0)
-        musica = video.streams.get_audio_only()
-        musica.download()
 
         return send_file(buffer, as_attachment=True, download_name=f"{video.title}.mp3")
     return render_template("homepage.html")
