@@ -1,0 +1,1 @@
+O projeto se trata de uma aplicação em Flask para baixar músicas a partir de um link do youtube. O front-end se encontra na pasta templates e o arquivo site.py é o arquivo responsável por receber os dados do front, processar e enviar uma resposta ao usuário.
